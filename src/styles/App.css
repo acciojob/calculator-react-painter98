@@ -5,8 +5,38 @@ h1 {
     
 
 button{
-    color: #27aedb;
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding:3vw;
+    width:3vw;
+    font-size:2em;
+}
+
+#main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    border:1px solid black;
+    gap:0;
+}
+.box{
+    width:20vw;
+    padding:1.5vw;  
+}
+
+#plus{
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+#equals{
+    grid-column: 4/5;
+    grid-row: 4/6;
 }
